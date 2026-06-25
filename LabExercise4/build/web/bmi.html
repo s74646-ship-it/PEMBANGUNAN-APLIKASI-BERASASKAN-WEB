@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Healthy Lifestyle Awareness Program</h1>
+
+    <div class="card">
+        <h2 class="form-title">BMI Calculator</h2>
+
+        <form action="processBMI.jsp" method="post">
+
+            <div class="form-group">
+                <label class="label">Weight (kg)</label>
+                <input type="number" name="weight" step="0.1" required>
+            </div>
+
+            <div class="form-group">
+                <label class="label">Height (m)</label>
+                <input type="number" name="height" step="0.01" required>
+            </div>
+
+            <div class="button-group">
+                <input type="submit" value="Calculate" class="btn btn-submit">
+                <input type="reset" value="Reset" class="btn btn-cancel">
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
